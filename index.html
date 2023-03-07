@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+    <title>Curriculum_Vitae</title>
+</head>
+<body>
+    <header>
+        <div id="fondo">
+            <h1>Curriculum Vitae</h1>
+            <img src="imagenes/perfil.jpg" alt="foto-perfil" id="foto-perfil">
+            <div id="datos">
+                <h3>Leandro Tarchini</h3>
+                <p>27 Años</p>
+                <p>Nacimiento: 15/01/95</p>
+                <p>Nacionalidad: Argentino</p>
+            </div>
+        </div>
+        <nav id="botones">
+			<ul>
+  				<li><a class="boton" href="#formacion">Formacion</a></li>
+  				<li><a class="boton" href="#experiencia">Experiencia Laboral</a></li>
+  				<li><a class="boton" href="#habilidades">Habilidades</a></li>
+                <li><a class="boton" href="#idiomas">Idiomas</a></li>
+                <li><a class="boton" href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+    </header>
+    <section id="formacion">
+        <h2>Formacion</h2>
+        <div id="sec">
+            <h3>Secundaria Hipolito Irigoyen N°305</h3>
+            <p>Titulo: Perito Mercantil</p>
+        </div> 
+        <div id="univ"> 
+            <h3>Universidad Nacional de Cordoba</h3>
+            <p>Titulo: Licenciatura en Administracion</p>
+        </div>
+        <div id="master">
+            <h3>Maestrias y Especializacion UNC</h3>
+            <p>Maestria en Direccion de Negocios UNC</p>
+            <p>Maestria en Estadistica Aplicada UNC</p>
+            <p>Especializacion en Gestion de la Calidad UNC</p>
+            <p>Especializacion en Tributacion UNC</p>
+        </div>
+    </section>
+    <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <div id="trabajo1">
+            <h3>Encargado de Deposito</h3>
+            <p>Logistica MC Soluciones</p>
+            <p>2015  -  2017</p>
+        </div>
+        <div id="trabajo2">
+            <h3>Supervisor Area Logistica</h3>
+            <p>Logistica MC Soluciones</p>
+            <p>2017  -  2019</p>
+        </div>
+        <div id="trabajo3">
+            <h3>Area Comercial</h3>
+            <p>Logistica MC Soluciones</p>
+            <p>2019  - 2022</p>
+        </div>
+        <div id="trabajo4">
+            <h3>Gerente Sucursal Centro</h3>
+            <p>Logistica MC Soluciones</p>
+            <p>Actualmente</p>
+        </div>
+    </section>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div id="habil1">
+            <ul>
+                <li>Trabajo en Equipo</li>
+                <li>Comunicacion Eficaz</li>
+                <li>Proactivo</li>
+                <li>Lectura Analitica</li>
+                <li>Capacidad para resolver problemas</li>
+            </ul>
+        </div>
+        <div id="habil2">
+            <ul>
+                <li>Habilidades Organizativas</li>
+                <li>Liderazgo</li>
+                <li>Manejo de Grupos</li>
+                <li>Innovación y nuevas tecnologías</li>
+                <li>Eficiencia y Responsabilidad</li>
+            </ul>
+        </div>
+    </section>
+    <section id="idiomas">
+        <h2>Idiomas</h2>
+        <div id="ingles">
+            <h3>Ingles - Instituto Cambridge</h3>
+            <button onclick="vermas()">Ver +</button>
+            <div id="certificados1">
+                <p>B1 First (FCE)</p>
+                <p>B1 Business Preliminary</p>
+                <p>B2 Business Vantage</p>
+                <p>C1 Business Higher</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/function.js"></script>
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <div id="datos-contacto">
+            <img src="imagenes/phone-solid.svg" alt="telefono">
+            <p>(639) 252-9515</p>
+            <img src="imagenes/envelope-regular.svg" alt="correo">
+            <p>tarchini_leo@gmail.com</p>
+            <img src="imagenes/location-dot-solid.svg" alt="local">
+            <p>7425 Wycliff</p> 
+            <img src="imagenes/instagram.svg" alt="logo-instagram">
+            <p>Instagram</p>
+            <img src="imagenes/facebook.svg" alt="logo-facebook">
+            <p>Facebook</p>
+            <img src="imagenes/twitter.svg" alt="logo-twitter">
+            <p>Twitter</p>
+        </div>
+        <div id="form">
+            <form name="miform" action="#" method="POST" onsubmit="return validar();">
+            <input type="text" name="nombre" placeholder="Nombre" >
+            <input type="text" name="apellido" placeholder="Apellido">
+            <input type="emails" name="email" placeholder="Email">
+            <input type="number" name="numero_cel" placeholder="Celular(opcional)">
+            <textarea name="mensaje" placeholder="Mensaje" rows="4"></textarea>
+            <button onclick="validar();">Enviar Mensaje</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
